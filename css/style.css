@@ -1,0 +1,25 @@
+
+
+a:link {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+    color: black;
+
+}
+
+h2 > a {
+  color: gray;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+}
+
+#header:link {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#header {
+  color: black;
+}
