@@ -23,3 +23,33 @@ h2 > a {
 #header {
   color: black;
 }
+
+.col-md-3 {
+
+  height: 280px;
+  /*background-image: url(../images/sweden/1.png);*/
+}
+
+.about {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+#hi {
+  background-color:red;
+  position: relative;
+  height:50px;
+  width: 50px;
+}
+
+.cool {
+  height:200px;
+  width:200px;
+  background-color: red;
+  opacity: 0;
+}
