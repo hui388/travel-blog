@@ -44,11 +44,12 @@ function addDivRows(location) {
             if (i < images[location].length) {
                 var box = document.createElement('img');
                 box.setAttribute('class', 'col-md-3 imageBox');
-                //set a tags
                 box.setAttribute('href', '#');
                 box.setAttribute('src', images[location][i]);
                 // box.style.backgroundImage = `url(${images[location][i]})`;
                 box.style.opacity = '0';
+                box.style.cursor = 'pointer';
+
                 divNode.appendChild(box);
 
 
@@ -118,7 +119,7 @@ function addDivRows(location) {
     Array.from(document.getElementsByClassName('imageBox')).forEach(imageBox =>  {
         imageBox.addEventListener('mouseover', function() {$(this).fadeTo("fast", 1.0);}, true);
         imageBox.addEventListener('mouseout', function() {$(this).fadeTo("fast", 0.9);}, true);
-    
+
     });
 
 }
