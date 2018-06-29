@@ -8,6 +8,25 @@ var images = {
 
 }
 
+//load all images on window load, so there is no display lag when display image boxes
+function preloader() {
+
+    for (var key in images) {
+
+        images[key].forEach(value => {
+
+            var img = new Image();
+            img.src = value;
+
+        })
+
+    }
+
+}
+
+window.onload = preloader();
+
+
 //add event listeners for each location link
 for (var key in images) {
 
