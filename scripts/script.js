@@ -1,10 +1,23 @@
 var images = {
 
-    Stockholm: ['./images/sweden/1.png', './images/sweden/2.png', './images/sweden/3.png', './images/sweden/1.png', './images/sweden/2.png', './images/sweden/3.png'],
-    NewYork: ['./images/new_york/1.png'],
-    Paris: [],
-    Chicago: [],
-    SanDiego: [],
+    Stockholm: ['./images/sweden/1.jpg', './images/sweden/2.jpg', './images/sweden/3.jpg', './images/sweden/4.jpg', './images/sweden/5.jpg', './images/sweden/6.jpg',
+'./images/sweden/7.jpg','./images/sweden/8.jpg','./images/sweden/9.jpg','./images/sweden/10.jpg','./images/sweden/11.jpg','./images/sweden/12.jpg',
+'./images/sweden/13.jpg','./images/sweden/14.jpg','./images/sweden/15.jpg','./images/sweden/16.jpg',
+],
+    NewYork: ['./images/new_york/2.jpg', './images/new_york/5.jpg', './images/new_york/6.jpg', './images/new_york/8.jpg',
+ './images/new_york/16.jpg', './images/new_york/17.jpg', './images/new_york/18.jpg', './images/new_york/21.jpg', './images/new_york/23.jpg',
+'./images/new_york/25.jpg', './images/new_york/26.jpg', './images/new_york/27.jpg', './images/new_york/28.jpg'],
+    Paris: ['./images/paris/1.jpg', './images/paris/2.jpg', './images/paris/3.jpg', './images/paris/4.jpg', './images/paris/5.jpg',
+'./images/paris/6.jpg', './images/paris/7.jpg', './images/paris/8.jpg', './images/paris/9.jpg', './images/paris/10.jpg',
+'./images/paris/11.jpg', './images/paris/12.jpg', './images/paris/13.jpg', './images/paris/14.jpg', './images/paris/15.jpg',
+'./images/paris/16.jpg', './images/paris/17.jpg', './images/paris/18.jpg', './images/paris/19.jpg', './images/paris/20.jpg',
+'./images/paris/21.jpg', './images/paris/22.jpg', './images/paris/23.jpg', './images/paris/24.jpg', ],
+    Chicago: ['./images/chicago/1.jpg', './images/chicago/2.jpg', './images/chicago/3.jpg', './images/chicago/4.jpg',
+'./images/chicago/5.jpg', './images/chicago/6.jpg', './images/chicago/7.jpg', './images/chicago/8.jpg', './images/chicago/9.jpg', ],
+    SanDiego: ['./images/san_diego/1.jpg', './images/san_diego/2.jpg', './images/san_diego/3.jpg','./images/san_diego/4.jpg',
+'./images/san_diego/5.jpg','./images/san_diego/6.jpg','./images/san_diego/7.jpg','./images/san_diego/8.jpg','./images/san_diego/9.jpg',
+'./images/san_diego/10.jpg','./images/san_diego/11.jpg','./images/san_diego/12.jpg','./images/san_diego/13.jpg','./images/san_diego/14.jpg',
+'./images/san_diego/15.jpg','./images/san_diego/16.jpg', ],
 
 }
 
@@ -135,13 +148,13 @@ function addDivRows(location) {
         document.getElementById("modal_content").appendChild(modalImage);
 
 
-        var modalText = document.createElement('p');
-        modalText.setAttribute('id', 'texting');
-        modalText.setAttribute('class', 'modalElement text-center');
-
-
-        modalText.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor tincidunt massa at ullamcorper. Ut eget ante vel sapien ultrices consequat eget id urna. Mauris congue fermentum est, eget auctor est sodales eu. Etiam dapibus porta augue ac varius. Curabitur at purus vel enim mollis sodales. Aliquam malesuada nunc non orci auctor, in tincidunt mi lacinia. Vestibulum eget tincidunt turpis, at vulputate ipsum. Fusce vel venenatis lorem, at suscipit ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.';
-        document.getElementById("modal_content").appendChild(modalText);
+        // var modalText = document.createElement('p');
+        // modalText.setAttribute('id', 'texting');
+        // modalText.setAttribute('class', 'modalElement text-center');
+        //
+        //
+        // modalText.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor tincidunt massa at ullamcorper. Ut eget ante vel sapien ultrices consequat eget id urna. Mauris congue fermentum est, eget auctor est sodales eu. Etiam dapibus porta augue ac varius. Curabitur at purus vel enim mollis sodales. Aliquam malesuada nunc non orci auctor, in tincidunt mi lacinia. Vestibulum eget tincidunt turpis, at vulputate ipsum. Fusce vel venenatis lorem, at suscipit ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.';
+        // document.getElementById("modal_content").appendChild(modalText);
 
     }, true)
 })
@@ -165,6 +178,3 @@ window.onclick = function (event) {
         $(modal).fadeOut('fast');
     }
 }
-
-
-
