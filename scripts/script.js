@@ -24,6 +24,14 @@ var images = {
 //load all images on window load, so there is no display lag when display image boxes
 function preloader() {
 
+    document.getElementById('page').style.display = 'block';
+    document.getElementById('loading').style.display = 'none';
+
+
+}
+
+function loadPage () {
+
     for (var key in images) {
 
         images[key].forEach(value => {
@@ -35,13 +43,10 @@ function preloader() {
 
     }
 
-    document.getElementById('page').style.display = 'block';
-    document.getElementById('loading').style.display = 'none';
-
-
 }
 
-window.onload = preloader();
+loadPage();
+window.onload = preloader;
 
 
 //add event listeners for each location link
