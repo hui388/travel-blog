@@ -35,6 +35,10 @@ function preloader() {
 
     }
 
+    document.getElementById('page').style.display = 'block';
+    document.getElementById('loading').style.display = 'none';
+
+
 }
 
 window.onload = preloader();

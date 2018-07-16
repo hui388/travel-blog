@@ -32,25 +32,31 @@
   </head>
 
   <body onLoad="javascript:preloader()">
-      <a href="index.html" id="header"><h1 class="text-center">Travel Gallery</h1></a>
-      <h2 class="text-center"><p id="NewYork" class="location">New York</p> | <p id="Stockholm" class="location">Stockholm</p> | <p href="#" id="Paris" class="location">Paris</p> | <p id="Chicago" class="location">Chicago</p> | <p href="#" id="SanDiego" class="location">San Diego</p></h2>
-      <br>
-      <br>
-      <br>
+      <div id="loading">
+          <img id="loading-gif" src='images/loading.gif'>
+      </div>
+      <div id="page" style="display:none">
+          <a href="index.html" id="header"><h1 class="text-center">Travel Gallery</h1></a>
+          <h2 class="text-center"><p id="NewYork" class="location">New York</p> | <p id="Stockholm" class="location">Stockholm</p> | <p href="#" id="Paris" class="location">Paris</p> | <p id="Chicago" class="location">Chicago</p> | <p href="#" id="SanDiego" class="location">San Diego</p></h2>
+          <br>
+          <br>
+          <br>
 
-      <div id="container" class="container">
+          <div id="container" class="container">
 
-          <div id="modal" class="modal">
-              <div id="modal_content"></div>
+              <div id="modal" class="modal">
+                  <div id="modal_content"></div>
+              </div>
+
           </div>
 
+          <br>
+          <br>
+          <br>
+
+          <h3 id="about" class="text-center about"><a href="about.html">About</a></h3>
+
       </div>
-
-      <br>
-      <br>
-      <br>
-
-      <h3 id="about" class="text-center about"><a href="about.html">About</a></h3>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
